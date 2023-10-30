@@ -13,7 +13,6 @@ Here is an example of the scheme of the application. If you want you can edit on
 
 ![app schema](images/sdadasd.jpg)
 
-**[not yet not decided]**
 
 ## Database 
 The database we will use here is [elephantsql](https://www.elephantsql.com/). Just log in to the database and then you can access the database using [dbeaver](https://dbeaver.io/about/)(**IMPORTANT NOTE** the URL must be in the JDBC URL format so converte the URL this jdbc:postgresql://[HOST]:[PORT]/[DATABASE]). If we will use all of the memory on the database we can migrate the database to [fly.io](https://fly.io/) or some other database service. 
