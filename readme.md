@@ -103,12 +103,21 @@ jobs:
           path: /tmp/test-reports
       - run:
           name: Build Docker Image
-          command: docker build -t jabok123458/rso_prepih:$CIRCLE_SHA1 .
+          command: docker build -t jabok123458/rso_prepih:latest .
       - run:
           name: Push Docker Image
           command: |
             echo "$DOCKERHUB_ACCESS_TOKEN" | docker login --username $DOCKERHUB_USERNAME --password-stdin
-            docker push jabok123458/rso_prepih:$CIRCLE_SHA1
+            docker push jabok123458/rso_prepih:latest
+
+# Invoke jobs via workflows
+# See: https://circleci.com/docs/configuration-reference/#workflows
+workflows:
+  sample: # This is the name of the workflow, feel free to change it to better match your workflow.
+    # Inside the workflow, you define the jobs you want to run.
+    jobs:
+      - build
+
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
