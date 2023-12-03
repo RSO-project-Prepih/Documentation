@@ -8,7 +8,7 @@ It is written in the following language in GO using gin and nodejs.
 
 - get-photo-info
 
-- gallery-authentication
+- gallery-authentication |[![CircleCI](https://dl.circleci.com/status-badge/img/gh/RSO-project-Prepih/gallery-authentication/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/RSO-project-Prepih/gallery-authentication/tree/main)
 
 # Architecture design
 
