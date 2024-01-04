@@ -126,3 +126,9 @@ workflows:
 # Collecting metrics
 The metrics will be collected using [prometheus](https://prometheus.io/), [grafana](https://grafana.com/) and kubernetis cluster.  You need to set this up in the code. You will need to expose the metrics endpoint in the code so that prometheus can collect the metrics. 
 
+
+
+grafana ip http://34.78.218.192/login
+
+prometheus ip http://35.187.39.50:9090/
+
